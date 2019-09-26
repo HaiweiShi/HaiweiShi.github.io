@@ -1,0 +1,19 @@
+#markdowm {
+	letter-spacing: 0.3px;
+}
+#markdowm pre code {
+	background-color: #222;
+    padding: 10px;
+    color: #ddd;
+    font-size: 14px;
+    display: block;
+}
+h1 {
+	text-align: center;
+}
+#markdowm h2,#markdowm h3,#markdowm h4,#markdowm h5,#markdowm h6 {
+	padding: 10px;
+}
+#markdowm blockquote p, #markdowm ul li{
+	font-size: 1.1rem;
+}

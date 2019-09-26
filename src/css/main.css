@@ -1,0 +1,65 @@
+/* 整体样式 */
+html {
+	font-size: 14px;
+}
+body {
+	-webkit-transition: margin 0.8s;
+	transition: margin 0.8s;
+	background-color: #fcfcfc;
+	padding: 0;
+	margin: 0 auto;
+	overflow-y:scroll;
+	min-width: 950px;
+	max-width: 1200px;
+	/*font-family: STFangSong, Helvetica, Vernada, Tahoma, STXihei, "Microsoft YaHei", "Songti SC", SimSun, Heiti, sans-serif;*/
+	letter-spacing: 1px;
+}
+@media (max-width: 1180px){
+	body {
+		margin: 0;
+	}
+}
+a {
+	text-decoration:none;
+	color: #111;
+}
+/* 标题样式 begin */
+.header {
+	height: 50px;
+	border-bottom: 1px solid #ddd;
+	padding: 8px 10px;
+	margin: 0 auto;
+}
+.header div {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+}
+.header .title {
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: #111;
+	/*text-shadow: 1px 1px #7db7ffb4;*/
+}
+.header .me {
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	border:1px solid #ddd;
+	border-radius: 50%;
+	text-align: center;
+	font-weight: bold;
+	overflow: hidden;
+}
+.header .me img{
+	width: 100%;
+}
+/* 标题样式 end */
+.footer{
+	height: 50px;
+}
+/* 内容容器样式 begin */
+.content {
+	margin: 18px auto;
+}
+/* 内容容器样式 end */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/card.css">
+	<script src="/header.js"></script>
+	<script src='./js/thousandSeparator.js'></script>
+</head>
+
+<body>
+	<div class="content">
+		<div class="card">
+			<h4>
+				数字千位分割：
+			</h4>
+			<p>
+				<input type="text" value="1000" id="ts" />
+			</p>
+			<p>
+				<button onclick="numToTS()">转换</button>
+			</p>
+			<p id="tsShow"></p>
+		</div>
+		<div class="card">
+			<h4>
+				数字千位分割2：
+			</h4>
+			<p>
+				<input id="phone" value="" />
+			</p>
+			<p>
+				<button onclick="phoneBlank()">转换</button>
+			</p>
+			<p id="phoneBlank"></p>
+		</div>
+	</div>
+</body>
+<script>
+	function numToTS() {
+		let v = document.getElementById('ts').value
+		let tsShow = document.getElementById('tsShow')
+		tsShow.innerText = thousandSeparator(v)
+	}
+	function phoneBlank() {
+		let v = document.getElementById('phone').value
+		let phoneBlank = document.getElementById('phoneBlank')
+		phoneBlank.innerText = parseFloat(v).toLocaleString()
+	}
+	function phoneBlank() {
+		let v = document.getElementById('phone').value
+		let phoneBlank = document.getElementById('phoneBlank')
+		phoneBlank.innerText = parseFloat(v).toLocaleString()
+	}
+	numToTS()
+</script>
+
+</html>

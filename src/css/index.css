@@ -1,0 +1,60 @@
+/* 首页布局样式 begin */
+.content {
+	margin-top: 20px;
+    padding-right: 360px;
+	position: relative;
+}
+.right, .left {
+	overflow: hidden;
+}
+.left {
+	/*border:1px solid #ddd;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(171,171,171,1);
+	        box-shadow: 3px 3px 5px 0px rgba(171,171,171,1);
+	border-radius: 5px;*/
+	width: 100%;
+	min-height: 550px;
+	float: left;
+}
+.right {
+	width: 300px;
+    min-height: 550px;
+    position: absolute;
+    right: 0;
+}
+.clear {
+	clear: both;
+}
+/* 首页布局样式 end */
+/* 文章列表的样式 begin */
+.record-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.record-list li{
+	height: 59px;
+	border-bottom: 1px solid transparent;
+}
+.record-list li:hover{
+	background-color:#ecf6fd;
+	border-bottom-color: #cedbe4;
+}
+.record-list li .tle{
+	display: inline-block;
+	padding-left:16px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.2rem;
+	color: #4a3171;
+}
+.record-list li .intro{
+	height: 20px;
+	padding-left:17px;
+	font-size: 0.9rem;
+	color: #222;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* 文章列表的样式 end */
