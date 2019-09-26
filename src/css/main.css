@@ -26,7 +26,7 @@ a {
 /* 标题样式 begin */
 .header {
 	height: 50px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #888;
 	padding: 8px 10px;
 	margin: 0 auto;
 }
