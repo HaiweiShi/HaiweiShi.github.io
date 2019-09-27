@@ -1,5 +1,15 @@
 
-	var str = "<header class='header'><div class='title'><a href='/index.html'><img style='width: 130px;' src='/src/assets/logo.png' alt='' /></a></div><div class='me' style='float:right'><img src='/src/assets/icon.jpg' alt='头像'></div></header>"
+	var str = "<header class='header'>" +
+		"<div class='title'>" +
+			"<a href='/index.html'>" +
+				"<img style='width: 130px;' src='/src/assets/logo.png' alt='' />" +
+			"</a>" +
+		"</div>" +
+		"<div class='me' style='float:right'>" +
+			"<img src='/src/assets/icon.jpg' alt='头像'>" +
+		"</div>" +
+	"</header>";
+	
 	var div = document.createElement('div')
 	div.innerHTML = str
 	var link = document.createElement('link')

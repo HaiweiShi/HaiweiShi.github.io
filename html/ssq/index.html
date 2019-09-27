@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>双色球号码生成</title>
+  <script src="/header.js"></script>
+  <style>
+    #table {
+      width: 100%;
+      border-collapse: collapse;/*关键代码*/
+    }
+    #table > caption {
+      height: 30px;
+    }
+    #table > tbody > tr > :first-child{
+      color: red;
+    }
+    #table > tbody > tr > :nth-child(3){
+      color: blue;
+    }
+    #table > tbody > tr {
+      height: 28px;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <button id='button'>点击生成</button>
+    <table id="table" >
+      <caption>生成双色球号码</caption>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+  </div>
+</body>
+<script>
+  function getSSQ(){
+    var red = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33'];
+    var blue = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
+    var list = []
+    function getBall(list) {
+      var i = Math.floor(Math.random() * list.length)
+      return list.splice(i, 1)
+    }
+    for (i = 0; i < 6; i++) {
+      list.push(getBall(red)[0])
+    }
+    var tbody = document.getElementById('tbody')
+    var tr = document.createElement('tr')
+    str = ''
+    console.log('出球顺序：' + list.join('->'))
+    list.sort((a, b) => a - b)
+    str += '<td>红球</td><td>' + list.join(' ') + '</td>'
+    str += '<td>篮球</td><td>' + getBall(blue)[0] + '</td>'
+    tr.innerHTML = str
+    tbody.appendChild(tr)
+  }
+  var button = document.getElementById('button')
+  button.onclick = getSSQ
+</script>
+
+</html>

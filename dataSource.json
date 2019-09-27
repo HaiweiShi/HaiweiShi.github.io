@@ -10,8 +10,13 @@
 		"intro": "千位分隔"
   },
   {
+		"title": "生成双色球号码",
+		"url": "/html/ssq/index.html",
+		"intro": "生成双色球号码"
+  },
+  {
 		"title": "001",
 		"serial": "001",
-		"intro": "001"
+		"intro": "test"
   }
 ]
