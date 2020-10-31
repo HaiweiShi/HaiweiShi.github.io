@@ -10,7 +10,7 @@
   <style>
     #table {
       width: 100%;
-      border-collapse: collapse;/*关键代码*/
+      border-collapse: collapse;
     }
     #table > caption {
       height: 30px;
@@ -56,7 +56,7 @@
     console.log('出球顺序：' + list.join('->'))
     list.sort((a, b) => a - b)
     str += '<td>红球</td><td>' + list.join(' ') + '</td>'
-    str += '<td>篮球</td><td>' + getBall(blue)[0] + '</td>'
+    str += '<td>蓝球</td><td>' + getBall(blue)[0] + '</td>'
     tr.innerHTML = str
     tbody.appendChild(tr)
   }
